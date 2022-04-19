@@ -30,7 +30,7 @@
 [node name="Game" type="Node2D"]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 254, 1352 )
+position = Vector2( 446, 876 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
