@@ -14,4 +14,7 @@ None
 This project was made by Ian Brower, Bonnie Gawron, and Abbey Gorny.
 
 # Contributions
-List of individual contributions. Can be made in a timeline style or just 3 seperate bullet points per person.
+
+Ian - Programming
+Abbey - Art
+Bonnie- Music and Creative Direction
