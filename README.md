@@ -16,5 +16,7 @@ This project was made by Ian Brower, Bonnie Gawron, and Abbey Gorny.
 # Contributions
 
 Ian - Programming
+
 Abbey - Art
+
 Bonnie- Music and Creative Direction
