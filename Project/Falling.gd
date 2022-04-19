@@ -17,6 +17,5 @@ func physics_process(_delta):
 	if player.is_on_ceiling():
 		player.velocity.y = 0
 	var input_vector = Vector2(Input.get_action_strength("right") - Input.get_action_strength("left"),1.0)
-	player.set_direction(sign(input_vector.x))
 	player.velocity += player.move_speed * input_vector + player.gravity
 	player.move_and_slide(player.velocity, Vector2.UP)

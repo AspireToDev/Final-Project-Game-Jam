@@ -16,3 +16,7 @@ export var max_jump = 800
 
 export var leap_speed = 5
 export var max_leap = 200
+
+func _physics_process(_delta):
+	velocity.x = clamp(velocity.x,-max_move,max_move)
+		
