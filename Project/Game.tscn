@@ -128,10 +128,9 @@ rect_scale = Vector2( 3, 3 )
 uppercase = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
-scale = Vector2( 1, 1 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
