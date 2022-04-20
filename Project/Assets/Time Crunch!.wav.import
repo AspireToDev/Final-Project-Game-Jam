@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Time Crunch!.wav-06f1f7f9c64c756b131e25917707e61c.sample"
+
+[deps]
+
+source_file="res://Assets/Time Crunch!.wav"
+dest_files=[ "res://.import/Time Crunch!.wav-06f1f7f9c64c756b131e25917707e61c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

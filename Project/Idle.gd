@@ -19,3 +19,5 @@ func physics_process(_delta):
 		SM.set_state("Moving")
 	if Input.is_action_pressed("jump"):
 		SM.set_state("Jumping")
+	if Input.is_action_just_pressed("mode_switch"):
+		SM.set_state("Block_move")
