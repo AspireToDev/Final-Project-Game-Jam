@@ -24,4 +24,4 @@ func _physics_process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
 	if $State.text != String(SM.state_name):
 		$State.text = String(SM.state_name)
-
+	
