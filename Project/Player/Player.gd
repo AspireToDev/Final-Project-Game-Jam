@@ -17,6 +17,9 @@ export var max_jump = 1600
 export var leap_speed = 5
 export var max_leap = 200
 
+func _ready():
+	$StateMachine.set_state("Idle")
+
 func _physics_process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
 	if $State.text != String(jump_power):
