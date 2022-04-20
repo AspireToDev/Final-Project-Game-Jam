@@ -114,13 +114,18 @@ __meta__ = {
 position = Vector2( 269, 441 )
 scale = Vector2( 2.5, 2.5 )
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
-move_speed = 188
-max_move = 752
-jump_speed = 3499
-max_jump = 3500
+
+[node name="State" type="Label" parent="Player"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 400.0
+margin_top = -98.0
+margin_right = 653.0
+margin_bottom = 98.0
+rect_scale = Vector2( 3, 3 )
+uppercase = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 scale = Vector2( 1, 1 )

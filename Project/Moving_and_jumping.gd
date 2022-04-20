@@ -11,7 +11,7 @@ func physics_process(_delta):
 		SM.set_state("Falling")
 
 	player.jump_power.y = clamp(player.jump_power.y - player.jump_speed, -player.max_jump, 0)
-	if Input.is_action_just_released("jump"):
+	if Input.is_action_just_pressed("jump"):
 		player.velocity += player.jump_power
 		SM.set_state("Falling")
 	elif Input.is_action_pressed("left") or Input.is_action_pressed("right"):

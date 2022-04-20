@@ -25,3 +25,4 @@ func physics_process(_delta):
 	elif Global.mode == "chip":
 		player.velocity = Vector2.ZERO
 		SM.set_state("Block_move")
+
