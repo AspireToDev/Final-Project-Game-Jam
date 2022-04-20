@@ -1,5 +1,5 @@
 extends Area2D
-#onready var ray = get_node_or_null("/root/Game/Player/Chip/RayCast2D")
+onready var ray = get_node_or_null("/root/Game/Player/Chip/RayCast2D")
 
 #var tile_size = 64
 #var inputs = {"right": Vector2.RIGHT,
