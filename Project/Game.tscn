@@ -129,12 +129,12 @@ uppercase = true
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 19
+frame = 1
 playing = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
-position = Vector2( -221.2, -190.8 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( -221.2, -192.015 )
+scale = Vector2( 0.4, 0.40467 )
 polygon = PoolVector2Array( 512, 342, 489, 361, 497, 388, 509, 394, 512, 413, 490, 430, 485, 461, 498, 501, 502, 561, 502, 609, 553, 615, 560, 518, 558, 488, 577, 466, 577, 435, 554, 421, 540, 398, 556, 374, 555, 352 )
 
 [node name="StateMachine" type="Node" parent="Player"]
@@ -160,6 +160,10 @@ script = ExtResource( 5 )
 
 [node name="Block_move" type="Node" parent="Player/StateMachine"]
 script = ExtResource( 7 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Player"]
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="Level" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )

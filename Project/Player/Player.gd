@@ -22,6 +22,6 @@ func _ready():
 
 func _physics_process(_delta):
 	velocity.x = clamp(velocity.x,-max_move,max_move)
-	if $State.text != String(jump_power):
-		$State.text = String(jump_power)
+	if $State.text != String(SM.state_name):
+		$State.text = String(SM.state_name)
 
