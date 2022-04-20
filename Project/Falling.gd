@@ -18,7 +18,7 @@ func physics_process(_delta):
 	if player.is_on_ceiling():
 		player.velocity.y = 0
 	var input_vector = Vector2(Input.get_action_strength("right") - Input.get_action_strength("left"),1.0)
-	player.velocity += player.move_speed * input_vector + player.gravity
+	player.velocity += input_vector + player.gravity
 	player.move_and_slide(player.velocity, Vector2.UP)
 	if Input.is_action_just_pressed("mode_switch"):
 		color.visible = true
