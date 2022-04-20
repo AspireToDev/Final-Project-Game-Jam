@@ -8,6 +8,7 @@ onready var color = get_node_or_null("/root/Game/ColorRect")
  
 
 func _ready():
+	color.visible = false
 	yield(player, "ready")
 
 func start():
@@ -19,9 +20,11 @@ func physics_process(_delta):
 		SM.set_state("Falling")
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right") and mode == "normal":
 		SM.set_state("Moving")
-	if Input.is_action_pressed("jump") and mode == "normal":
+	if Input.is_action_just_pressed("jump") and mode == "normal":
 		SM.set_state("Jumping")
 	if Input.is_action_just_pressed("mode_switch") and mode == "normal":
 		color.visible = true
 		Global.mode = "chip"
 		SM.set_state("Block_move")
+	if Input.is_action_just_pressed("eat_chip") and player.is_on_floor():
+		SM.set_state("Eat")
