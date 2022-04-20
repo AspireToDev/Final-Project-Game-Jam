@@ -13,8 +13,6 @@ func start():
 func physics_process(_delta):
 	if not player.is_on_floor():
 		SM.set_state("Falling")
-	if Input.is_action_pressed("jump"):
-		SM.set_state("Moving_and_Jumping")
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
 		var input_vector = Vector2(Input.get_action_strength("right") - Input.get_action_strength("left"),1.0)
 		player.velocity += player.move_speed * input_vector
@@ -22,3 +20,5 @@ func physics_process(_delta):
 	else:
 		player.velocity = Vector2.ZERO
 		SM.set_state("Idle")
+	if Input.is_action_pressed("jump"):
+		SM.set_state("Moving_and_Jumping")
