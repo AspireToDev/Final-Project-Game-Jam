@@ -1,0 +1,61 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "move_spud",
+				"target_node_path": "Cutscene2"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To any who have eaten Blays Potato chips recently, be warned! The rats have caused a leak of radioactive waste in the factory."
+		},
+		{
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Those who haven't died have reported having magical powers, activated by the \"E\" key!"
+		},
+		{
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whatever that means."
+		},
+		{
+			"change_scene": "res://Game.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650572913.json",
+		"name": "Cutscene2"
+	}
+}
