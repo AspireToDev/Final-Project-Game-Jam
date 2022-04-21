@@ -27,7 +27,7 @@ Features:
 - 
 Assets:
 - Tilemap created by Bonnie Gawron using https://www.piskelapp.com/
-- Animated Sprite created by Abbey Gorney using https://www.piskelapp.com/
+- Animated Sprite created by Abbey Gorny using https://www.piskelapp.com/
 - Music created by Bonnie Gawron using https://musescore.org/en
 
 Resources: 
@@ -42,5 +42,5 @@ None
 
 # Created by: GiGaByte Studios (GGB)
 - Bonnie Gawron: Level Design, Conceptual Work, Background/Level Tilemap, and Programming
-- Abbey Gorney: Player Animated Sprite and Spritesheets
+- Abbey Gorny: Player Animated Sprite and Spritesheets
 - Ian Brower: Repository/File Management, StateMachine/Physics, and Bug-Fixing
