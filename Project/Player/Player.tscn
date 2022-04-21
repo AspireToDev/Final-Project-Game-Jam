@@ -63,36 +63,6 @@ flags = 4
 atlas = ExtResource( 13 )
 region = Rect2( 0, 384, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 342, 0, 171, 342 )
-
-[sub_resource type="AtlasTexture" id=34]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 684, 0, 171, 342 )
-
-[sub_resource type="AtlasTexture" id=35]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 171, 342, 171, 342 )
-
-[sub_resource type="AtlasTexture" id=36]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 684, 342, 171, 342 )
-
-[sub_resource type="AtlasTexture" id=37]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 171, 684, 171, 342 )
-
-[sub_resource type="AtlasTexture" id=38]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 513, 684, 171, 342 )
-
 [sub_resource type="AtlasTexture" id=28]
 flags = 4
 atlas = ExtResource( 10 )
@@ -117,6 +87,11 @@ region = Rect2( 175, 346, 175, 346 )
 flags = 4
 atlas = ExtResource( 10 )
 region = Rect2( 350, 346, 175, 346 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 684, 0, 171, 342 )
 
 [sub_resource type="AtlasTexture" id=40]
 flags = 4
@@ -158,10 +133,35 @@ flags = 4
 atlas = ExtResource( 13 )
 region = Rect2( 256, 256, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=39]
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 342, 0, 171, 342 )
+
+[sub_resource type="AtlasTexture" id=34]
 flags = 4
 atlas = ExtResource( 12 )
 region = Rect2( 684, 0, 171, 342 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 171, 342, 171, 342 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 684, 342, 171, 342 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 171, 684, 171, 342 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 513, 684, 171, 342 )
 
 [sub_resource type="SpriteFrames" id=14]
 animations = [ {
@@ -170,25 +170,25 @@ animations = [ {
 "name": "Idle",
 "speed": 8.0
 }, {
-"frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
-"loop": true,
-"name": "Jumping",
-"speed": 8.0
-}, {
 "frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
 "loop": true,
 "name": "Moving",
 "speed": 8.0
+}, {
+"frames": [ SubResource( 39 ) ],
+"loop": true,
+"name": "Block_Move",
+"speed": 5.0
 }, {
 "frames": [ SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ) ],
 "loop": true,
 "name": "Eat",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 39 ) ],
+"frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
 "loop": true,
-"name": "Block_Move",
-"speed": 5.0
+"name": "Jumping",
+"speed": 8.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
@@ -200,6 +200,7 @@ max_move = 150
 leap_speed = 100
 
 [node name="State" type="Label" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -210,15 +211,12 @@ margin_right = 653.0
 margin_bottom = 98.0
 rect_scale = Vector2( 3, 3 )
 uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -16.875, 3.75 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 1
+frame = 7
 playing = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
