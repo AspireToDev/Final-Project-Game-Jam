@@ -1,24 +1,46 @@
-# Final-Project-Game-Jam
-This is a joint project for MSCH-C 220 Game Technology at Indiana University. This jam lasts from 4/19/22 4:45 PM to 4/21/22 6 PM. 
+# Time Crunch
+MSCH-C220 Game Jam, April 2022
 
-The theme is: Time Crunch
+## Theme
+We interpreted the theme Time Crunch theme as guy eating chips (crunch) that can be used to stop time and move. 
 
-# Features
-List features here with bulleted list
+## Game Play
+Objective: The objective is to progress through the different platforming levels, utilizing the chips as bonus movement. 
 
-# Reference Material
-List outside sources here with links/credit
+Game-play instructions:
+- W: Jump
+- A: Left
+- D: Right
+- E: Activate/Deactivate Chip Mode
+- W/A/S/D: Up/Left/Down/Right while in Chip mode
+- Esc: Close Program
 
-# Future Development
+## Impediments
+- When implementing the state-machine from Unit 4: 2d Platformer, we encountered an unfortunate spelling typo that was making it impossible to move and jump.
+- We had many issues with "gravity" and downward speed being way too high, therefore making the game too fast for people to react and make meaningful platforming decisions. 
+- Importing assets from Piskel required multiple iterations because what seems like a 1 to 1 size model doesn't always turn out as expected.
+- Choosing the right things to work on at the right time can be quite difficult when you are in a **time crunch**
+
+## Implementation
+Features:
+- A mode switch: Made by a state machine capable of blocking normal movement inputs and utilizing a different "advanced movement" state. 
+- 
+Assets:
+- Tilemap created by Bonnie Gawron using https://www.piskelapp.com/
+- Animated Sprite created by Abbey Gorny using https://www.piskelapp.com/
+- Music created by Bonnie Gawron using https://musescore.org/en
+
+Resources: 
+- https://www.piskelapp.com/
+- https://godotengine.org/
+- https://musescore.org/en
+
+## References
+
+## Future Development
 None
 
-# Creators
-This project was made by Ian Brower, Bonnie Gawron, and Abbey Gorny.
-
-# Contributions
-
-Ian - Programming
-
-Abbey - Art
-
-Bonnie- Music and Creative Direction
+# Created by: GiGaByte Studios (GGB)
+- Bonnie Gawron: Level Design, Conceptual Work, Background/Level Tilemap, and Programming
+- Abbey Gorny: Player Animated Sprite and Spritesheets
+- Ian Brower: Repository/File Management, StateMachine/Physics, and Bug-Fixing
