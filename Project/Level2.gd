@@ -18,8 +18,4 @@ func _on_Level3_body_entered(body):
 		
 func _on_Level4_body_entered(body):
 	if body.name == "Player":
-		camera4.current = true
-	
-func _on_Level5_body_entered(body):
-	if body.name == "Player":
-		camera5.current = true
+		get_tree().change_scene("res://Win.tscn")
