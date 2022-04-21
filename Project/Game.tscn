@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Player/PlayerContainer.gd" type="Script" id=1]
+[ext_resource path="res://Player/Fall_death.gd" type="Script" id=2]
 [ext_resource path="res://Level2.gd" type="Script" id=3]
 [ext_resource path="res://Assets/Tilesheet.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Time Crunch!.wav" type="AudioStream" id=11]
@@ -291,6 +292,9 @@ points = PoolVector2Array( 126.149, 87.2637, 43.1353, 86.4562, 1.9514, 57.8697, 
 } ]
 9/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=27]
+extents = Vector2( 4290, 55 )
+
 [node name="Game" type="Node2D"]
 
 [node name="Background" type="TileMap" parent="."]
@@ -368,6 +372,15 @@ position = Vector2( 6136, -680 )
 scale = Vector2( 0.999999, 2.89951 )
 polygon = PoolVector2Array( 3048, -15, 3048, 647, 3101, 641, 3105, -21 )
 
+[node name="Fall_death" type="Area2D" parent="."]
+position = Vector2( 1000, 1900 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fall_death"]
+position = Vector2( 3987, -45 )
+shape = SubResource( 27 )
+
 [connection signal="body_entered" from="Level2" to="Level2" method="_on_Level2_body_entered"]
 [connection signal="body_entered" from="Level3" to="Level2" method="_on_Level3_body_entered"]
 [connection signal="body_entered" from="Level4" to="Level2" method="_on_Level4_body_entered"]
+[connection signal="body_entered" from="Fall_death" to="Fall_death" method="_on_Fall_death_body_entered"]
