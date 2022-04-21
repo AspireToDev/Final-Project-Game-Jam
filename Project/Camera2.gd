@@ -8,5 +8,5 @@ func _ready():
 
 
 
-func _on_Level_2_body_entered(body):
+func _on_Level_2_body_entered(_body):
 	pass
