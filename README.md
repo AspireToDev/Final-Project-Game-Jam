@@ -1,29 +1,3 @@
-# Final-Project-Game-Jam
-This is a joint project for MSCH-C 220 Game Technology at Indiana University. This jam lasts from 4/19/22 4:45 PM to 4/21/22 6 PM. 
-
-The theme is: Time Crunch
-
-# Features
-List features here with bulleted list
-
-# Reference Material
-List outside sources here with links/credit
-
-# Future Development
-None
-
-# Creators
-This project was made by Ian Brower, Bonnie Gawron, and Abbey Gorny.
-
-# Contributions
-
-Ian - Programming
-
-Abbey - Art
-
-Bonnie- Music and Creative Direction
-
-
 # Project Name
 MSCH-C220 Game Jam, April 2022
 
@@ -42,15 +16,29 @@ Game-play instructions:
 - Esc: Close Program
 
 ## Impediments
-Struggles or surprises you encountered during the development of the game
+- When implementing the state-machine from Unit 4: 2d Platformer, we encountered an unfortunate spelling typo that was making it impossible to move and jump.
+- We had many issues with "gravity" and downward speed being way too high, therefore making the game too fast for people to react and make meaningful platforming decisions. 
+- Importing assets from Piskel required multiple iterations because what seems like a 1 to 1 size model doesn't always turn out as expected.
+- Choosing the right things to work on at the right time can be quite difficult when you are in a **time crunch**
 
 ## Implementation
-Features
-Assets, or resources used
+Features:
+- A mode switch: Made by a state machine capable of blocking normal movement inputs and utilizing a different "advanced movement" state. 
+- 
+Assets:
+- Tilemap created by Bonnie Gawron using https://www.piskelapp.com/
+- Animated Sprite created by Abbey Gorney using https://www.piskelapp.com/
+
+Resources: 
+- https://www.piskelapp.com/
+- https://godotengine.org/
 
 ## References
 
 ## Future Development
+None
 
-# Created by: Group Name
-List of group members (and contributions)
+# Created by: GiGaByte Studios (GGB)
+- Bonnie Gawron: Level Design, Conceptual Work, Art, and Programming
+- Abbey Gorney: Player Animated Sprite and Spritesheets
+- Ian Brower: StateMachine, Physics, and Bug-Fixing
