@@ -1,4 +1,4 @@
-# Project Name
+# Time Crunch
 MSCH-C220 Game Jam, April 2022
 
 ## Theme
