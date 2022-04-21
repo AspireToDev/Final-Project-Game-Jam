@@ -14,11 +14,6 @@
 [ext_resource path="res://Assets/Jumping.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Eat Chip.png" type="Texture" id=13]
 
-[sub_resource type="AtlasTexture" id=39]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 684, 0, 171, 342 )
-
 [sub_resource type="AtlasTexture" id=4]
 flags = 4
 atlas = ExtResource( 11 )
@@ -69,31 +64,6 @@ flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 0, 384, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=28]
-flags = 4
-atlas = ExtResource( 10 )
-region = Rect2( 0, 0, 175, 346 )
-
-[sub_resource type="AtlasTexture" id=29]
-flags = 4
-atlas = ExtResource( 10 )
-region = Rect2( 175, 0, 175, 346 )
-
-[sub_resource type="AtlasTexture" id=30]
-flags = 4
-atlas = ExtResource( 10 )
-region = Rect2( 350, 0, 175, 346 )
-
-[sub_resource type="AtlasTexture" id=31]
-flags = 4
-atlas = ExtResource( 10 )
-region = Rect2( 175, 346, 175, 346 )
-
-[sub_resource type="AtlasTexture" id=32]
-flags = 4
-atlas = ExtResource( 10 )
-region = Rect2( 350, 346, 175, 346 )
-
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
 atlas = ExtResource( 12 )
@@ -123,6 +93,31 @@ region = Rect2( 171, 684, 171, 342 )
 flags = 4
 atlas = ExtResource( 12 )
 region = Rect2( 513, 684, 171, 342 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 175, 346 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 175, 0, 175, 346 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 350, 0, 175, 346 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 175, 346, 175, 346 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 350, 346, 175, 346 )
 
 [sub_resource type="AtlasTexture" id=40]
 flags = 4
@@ -164,32 +159,37 @@ flags = 4
 atlas = ExtResource( 13 )
 region = Rect2( 256, 256, 128, 128 )
 
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 684, 0, 171, 342 )
+
 [sub_resource type="SpriteFrames" id=14]
 animations = [ {
-"frames": [ SubResource( 39 ) ],
-"loop": true,
-"name": "Block_Move",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 9.0
-}, {
-"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
-"loop": true,
-"name": "Moving",
-"speed": 8.0
 }, {
 "frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
 "loop": true,
 "name": "Jumping",
 "speed": 8.0
 }, {
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
+"loop": true,
+"name": "Moving",
+"speed": 8.0
+}, {
 "frames": [ SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ) ],
 "loop": true,
 "name": "Eat",
 "speed": 10.0
+}, {
+"frames": [ SubResource( 39 ) ],
+"loop": true,
+"name": "Block_Move",
+"speed": 5.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
@@ -219,11 +219,11 @@ __meta__ = {
 position = Vector2( -16.875, 3.75 )
 frames = SubResource( 14 )
 animation = "Eat"
-frame = 4
+frame = 2
 playing = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -221.2, -192.015 )
+position = Vector2( -228.125, -178.75 )
 scale = Vector2( 0.4, 0.40467 )
 polygon = PoolVector2Array( 512, 342, 489, 361, 497, 388, 509, 394, 512, 413, 490, 430, 485, 461, 498, 501, 502, 561, 502, 609, 553, 615, 560, 518, 558, 488, 577, 466, 577, 435, 554, 421, 540, 398, 556, 374, 555, 352 )
 
@@ -252,25 +252,26 @@ script = ExtResource( 4 )
 script = ExtResource( 3 )
 
 [node name="Right" type="RayCast2D" parent="."]
-position = Vector2( -10, 1.60001 )
+position = Vector2( -18.75, 13.125 )
 rotation = 4.71239
 enabled = true
 cast_to = Vector2( 0, 20 )
 collision_mask = 2
-collide_with_areas = true
-collide_with_bodies = false
 
 [node name="Left" type="RayCast2D" parent="."]
-position = Vector2( -10, 0.800018 )
+position = Vector2( -14.375, 12.5 )
 rotation = 1.5708
+enabled = true
 cast_to = Vector2( 0, 20 )
 collision_mask = 2
 
 [node name="Up" type="RayCast2D" parent="."]
-position = Vector2( -10, 0.666687 )
+position = Vector2( -18.125, 11.875 )
+enabled = true
 cast_to = Vector2( 0, -50 )
 collision_mask = 2
 
 [node name="Down" type="RayCast2D" parent="."]
-position = Vector2( -10.4, 1.33334 )
+position = Vector2( -18.75, 10.625 )
+enabled = true
 collision_mask = 2

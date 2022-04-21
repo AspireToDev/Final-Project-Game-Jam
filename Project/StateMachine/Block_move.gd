@@ -5,6 +5,11 @@ onready var player = get_node("../..")
 onready var color = get_node_or_null("/root/Game/ColorRect")
 onready var mode = Global.mode
 
+onready var right = get_node_or_null("Right")
+onready var left = get_node_or_null("Left")
+onready var up = get_node_or_null("Up")
+onready var down = get_node_or_null("Down")
+
 func _ready():
 	yield(player, "ready")
 
@@ -23,7 +28,14 @@ func physics_process(_delta):
 		else:
 			SM.set_state("Falling")
 	if Input.is_action_just_pressed("right"):
-		player.position.x += 275
+		if right != null:
+			right.position.x += 275
+			if right.is_not_colliding:
+				player.position.x += 275
+			else: 
+				right.position.x -= 275
+		else: 
+			print("It is null")
 	if Input.is_action_just_pressed("left"):
 		player.position.x -= 275
 	if Input.is_action_just_pressed("jump"):
