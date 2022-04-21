@@ -6,7 +6,7 @@ func _ready():
 
 
 func _on_Button_pressed():
-	var _scene = get_tree().change_scene("res://Game.tscn")
+	var _scene = get_tree().change_scene("res://Cutscenes/Cutscene.tscn")
 
 
 func _on_Button2_pressed():
