@@ -1,0 +1,89 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650569926.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And so, the orphans were all saved from the acid spill."
+		},
+		{
+			"character": "character-1650569926.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Damn. That's whack."
+		},
+		{
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In other news, the Blays factory, purveyor of potato chips the world round..."
+		},
+		{
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Will be closing."
+		},
+		{
+			"character": "character-1650569909.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Because of the rats."
+		},
+		{
+			"character": "character-1650569926.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WHAT???? That's crazy! Blays makes the best chips! I have to do something!"
+		},
+		{
+			"change_scene": "res://Cutscenes/Cutscene2.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650569954.json",
+		"name": "Cutscene"
+	}
+}
