@@ -368,9 +368,6 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 34 )
 text = "Chips: 3"
 script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Camera2" type="Camera2D" parent="."]
 position = Vector2( 3072, 0 )
