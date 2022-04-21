@@ -22,3 +22,35 @@ Ian - Programming
 Abbey - Art
 
 Bonnie- Music and Creative Direction
+
+
+# Project Name
+MSCH-C220 Game Jam, April 2022
+
+## Theme
+We interpreted the theme Time Crunch theme as guy eating chips (crunch) that can be used to stop time and move. 
+
+## Game Play
+Objective: The objective is to progress through the different platforming levels, utilizing the chips as bonus movement. 
+
+Game-play instructions:
+- W: Jump
+- A: Left
+- D: Right
+- E: Activate/Deactivate Chip Mode
+- W/A/S/D: Up/Left/Down/Right while in Chip mode
+- Esc: Close Program
+
+## Impediments
+Struggles or surprises you encountered during the development of the game
+
+## Implementation
+Features
+Assets, or resources used
+
+## References
+
+## Future Development
+
+# Created by: Group Name
+List of group members (and contributions)
