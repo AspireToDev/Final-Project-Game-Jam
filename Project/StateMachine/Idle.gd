@@ -16,11 +16,13 @@ func start():
 	##player.set_animation("Idle")
 
 func physics_process(_delta):
+	if player.is_on_floor():
+		player.velocity.y = 0 
 	if not player.is_on_floor():
 		SM.set_state("Falling")
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
 		SM.set_state("Moving")
-	if Input.is_action_just_pressed("jump") and mode == "normal":
+	if Input.is_action_pressed("jump") and mode == "normal":
 		SM.set_state("Jumping")
 	if Input.is_action_just_pressed("mode_switch"):
 		color.visible = true
