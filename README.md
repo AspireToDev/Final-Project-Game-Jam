@@ -28,10 +28,12 @@ Features:
 Assets:
 - Tilemap created by Bonnie Gawron using https://www.piskelapp.com/
 - Animated Sprite created by Abbey Gorney using https://www.piskelapp.com/
+- Music created by Bonnie Gawron using https://musescore.org/en
 
 Resources: 
 - https://www.piskelapp.com/
 - https://godotengine.org/
+- https://musescore.org/en
 
 ## References
 
