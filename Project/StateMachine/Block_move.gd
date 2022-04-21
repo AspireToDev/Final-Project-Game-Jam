@@ -10,7 +10,7 @@ func _ready():
 
 
 func start():
-	#player.set_animation("Moving")
+	player.set_animation("Block_Move")
 	player.jump_power = Vector2.ZERO
 
 func physics_process(_delta):
