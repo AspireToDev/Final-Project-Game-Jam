@@ -45,7 +45,14 @@ func physics_process(_delta):
 		if Global.chips >0: 
 			player.position.x -= 275
 			Global.chips -= 1
+			label.ready()
 	if Input.is_action_just_pressed("jump"):
-		player.position.y -= 275
+		if Global.chips >0: 
+			player.position.y -= 275
+			Global.chips -= 1
+			label.ready()
 	if Input.is_action_just_pressed("down"):
-		player.position.y += 275
+		if Global.chips > 0:
+			player.position.y += 275
+			Global.chips -= 1
+			label.ready()
