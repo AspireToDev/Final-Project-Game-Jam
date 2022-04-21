@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Player/PlayerContainer.gd" type="Script" id=1]
 [ext_resource path="res://Player/Fall_death.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://UI/Chip_Count2.gd" type="Script" id=9]
 [ext_resource path="res://Assets/Tilesheet.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Time Crunch!.wav" type="AudioStream" id=11]
+[ext_resource path="res://UI/Chip_Count3.gd" type="Script" id=12]
 
 [sub_resource type="TileSet" id=26]
 0/name = "Tilesheet.png 0"
@@ -373,6 +374,9 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 34 )
 text = "Chips: 3"
 script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Camera2" type="Camera2D" parent="."]
 position = Vector2( 3072, 0 )
@@ -388,11 +392,27 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 36 )
 text = "Chips: 1"
 script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Camera3" type="Camera2D" parent="."]
 position = Vector2( 6144, 0 )
 anchor_mode = 0
 zoom = Vector2( 3, 3 )
+
+[node name="Chip_Count3" type="Label" parent="Camera3"]
+margin_left = 2673.0
+margin_top = 25.0
+margin_right = 2959.0
+margin_bottom = 135.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 36 )
+text = "Chips: 1"
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Camera4" type="Camera2D" parent="."]
 position = Vector2( 9216, 0 )
