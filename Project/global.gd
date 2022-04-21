@@ -1,6 +1,6 @@
 extends Node
 
-export var chips = 0
+export var chips = 3
 export var mode = "normal"
 
 
