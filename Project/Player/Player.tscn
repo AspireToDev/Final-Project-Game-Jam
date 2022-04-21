@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://StateMachine/Idle.gd" type="Script" id=1]
 [ext_resource path="res://StateMachine/Jumping.gd" type="Script" id=2]
@@ -10,58 +10,57 @@
 [ext_resource path="res://StateMachine/Moving_and_jumping.gd" type="Script" id=8]
 [ext_resource path="res://Player/StateMachine.gd" type="Script" id=9]
 [ext_resource path="res://Assets/Walking.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Idle Sprite sheet.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Jumping.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Eat Chip.png" type="Texture" id=13]
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=48]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 0, 0, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=49]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 128, 0, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=50]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 256, 0, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=51]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 0, 128, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=52]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 128, 128, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=53]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 256, 128, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=10]
+[sub_resource type="AtlasTexture" id=54]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 0, 256, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=55]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 128, 256, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=56]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 256, 256, 128, 128 )
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=57]
 flags = 4
-atlas = ExtResource( 11 )
+atlas = ExtResource( 13 )
 region = Rect2( 0, 384, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=33]
@@ -166,10 +165,10 @@ region = Rect2( 684, 0, 171, 342 )
 
 [sub_resource type="SpriteFrames" id=14]
 animations = [ {
-"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ), SubResource( 4 ) ],
+"frames": [ SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 9.0
+"speed": 8.0
 }, {
 "frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
 "loop": true,
@@ -218,14 +217,14 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -16.875, 3.75 )
 frames = SubResource( 14 )
-animation = "Eat"
-frame = 2
+animation = "Idle"
+frame = 1
 playing = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( -228.125, -178.75 )
 scale = Vector2( 0.4, 0.40467 )
-polygon = PoolVector2Array( 512, 342, 489, 361, 497, 388, 509, 394, 512, 413, 490, 430, 485, 461, 498, 501, 502, 561, 502, 609, 553, 615, 560, 518, 558, 488, 577, 466, 577, 435, 554, 421, 540, 398, 556, 374, 555, 352 )
+polygon = PoolVector2Array( 512, 342, 489, 361, 497, 388, 509, 394, 512, 413, 490, 430, 485, 461, 490.805, 478.862, 498, 501, 502, 561, 502, 609, 553, 615, 560, 518, 558, 488, 577, 466, 577, 435, 554, 421, 540, 398, 556, 374, 555, 352 )
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource( 9 )
@@ -253,25 +252,24 @@ script = ExtResource( 3 )
 
 [node name="Right" type="RayCast2D" parent="."]
 position = Vector2( -18.75, 13.125 )
-rotation = 4.71239
 enabled = true
-cast_to = Vector2( 0, 20 )
+cast_to = Vector2( 100, 0 )
 collision_mask = 2
 
 [node name="Left" type="RayCast2D" parent="."]
 position = Vector2( -14.375, 12.5 )
-rotation = 1.5708
 enabled = true
-cast_to = Vector2( 0, 20 )
+cast_to = Vector2( -100, 0 )
 collision_mask = 2
 
 [node name="Up" type="RayCast2D" parent="."]
 position = Vector2( -18.125, 11.875 )
 enabled = true
-cast_to = Vector2( 0, -50 )
+cast_to = Vector2( 0, -100 )
 collision_mask = 2
 
 [node name="Down" type="RayCast2D" parent="."]
 position = Vector2( -18.75, 10.625 )
 enabled = true
+cast_to = Vector2( 0, 100 )
 collision_mask = 2
