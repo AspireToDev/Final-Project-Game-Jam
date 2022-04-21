@@ -39,6 +39,6 @@ Resources:
 None
 
 # Created by: GiGaByte Studios (GGB)
-- Bonnie Gawron: Level Design, Conceptual Work, Art, and Programming
+- Bonnie Gawron: Level Design, Conceptual Work, Background/Level Tilemap, and Programming
 - Abbey Gorney: Player Animated Sprite and Spritesheets
-- Ian Brower: StateMachine, Physics, and Bug-Fixing
+- Ian Brower: Repository/File Management, StateMachine/Physics, and Bug-Fixing
