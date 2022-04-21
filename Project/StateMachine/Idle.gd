@@ -13,7 +13,7 @@ func _ready():
 
 func start():
 	player.velocity = Vector2.ZERO
-	##player.set_animation("Idle")
+	player.set_animation("Idle")
 
 func physics_process(_delta):
 	if player.is_on_floor():

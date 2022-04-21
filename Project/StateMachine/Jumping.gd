@@ -6,8 +6,8 @@ onready var player = get_node("../..")
 func _ready():
 	yield(player, "ready")
 
-#func start():
-	#player.set_animation("Jumping")
+func start():
+	player.set_animation("Jumping")
 
 func physics_process(_delta):
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
